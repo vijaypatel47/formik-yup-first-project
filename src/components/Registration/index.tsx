@@ -30,10 +30,10 @@ const Registration: React.FC = () => {
         <div className="h-screen w-full bg-black flex flex-col items-center align-center p-10 lg:text-lg">
           <div className="h-full w-full flex flex-col items-center justify-center">
             <img src="https://res.cloudinary.com/drgheojrx/image/upload/v1721377745/Logo_ja7u1j.png" alt="logo" className="w-150 h-30 bg-transparent"/>
-            <div className="bg-gray-800 rounded-md  pl-5 pr-10 py-10 my-5 w-[100%] md:w-[60%] lg:w-[33%] xl:[30%] h-[500px]">
+            <div className="bg-gray-800 rounded-md  px-10 py-10 my-5 w-[100%] md:w-[60%] lg:w-[33%] xl:[30%] h-[550px]">
                 <h1 className="text-gray-200 font-bold">Registration</h1>
                 <p className="text-gray-500 my-2">Already have account? <span className="text-green-300"><Link to="/login">Sign In</Link></span></p>
-                <form className="h-[340px] flex flex-col overflow-y-scroll" onSubmit={handleSubmit}>
+                <form className="h-[370px] flex flex-col overflow-y-scroll" onSubmit={handleSubmit}>
                     <div className="mt-10 pr-10">
                         <input type="email" name="email" autoComplete='off' value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email address" className="bg-transparent outline-none  text-gray-500" />
                         <hr className="w-360 h-1 text-gray-300"></hr>
