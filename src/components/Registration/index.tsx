@@ -37,7 +37,7 @@ const Registration: React.FC = () => {
                     <div className="mt-10 pr-10">
                         <input type="email" name="email" autoComplete='off' value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email address" className="bg-transparent outline-none  text-gray-500" />
                         <hr className="w-360 h-1 text-gray-300"></hr>
-                        {errors.email && touched.email ? <p className="text-red-500">{errors.email}</p> : null }
+                        {errors.email && touched.email ? <p className="text-[10px] md:text-[15px] text-red-500">{errors.email}</p> : null }
                     </div>
                     <div className="my-10 pr-10">
                         <div className='flex flex-row justify-between items-center'>
@@ -47,7 +47,14 @@ const Registration: React.FC = () => {
                         </span>
                         </div>
                         <hr className="w-360 h-1 text-gray-300"></hr>
-                        {errors.password && touched.password ? <p className="text-red-500">{errors.password}</p> : null }
+                        {errors.password && touched.password ? 
+                            <div className="w-[70%]">
+                                <img src="https://res.cloudinary.com/drgheojrx/image/upload/v1721740116/Arrow_zaajjk.png" alt="arrow" className='h-2 w-3 mx-[50%]'/>
+                                <p className='w-full rounded-md bg-gray-500 text-gray-200 text-[11px] px-1 py-0 text-gray-200'>{errors.password}</p>
+                            </div>
+                             :
+                              null 
+                        }
                     </div>
                     <button type="submit" className="mb-5 py-2 px-10 mr-10 rounded-2xl bg-gray-500 text-gray-200  hover:bg-purple-500">Continue</button>
                     <div className="flex items-center space-x-4 mt-3 pr-10">
