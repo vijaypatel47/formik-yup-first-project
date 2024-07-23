@@ -22,7 +22,7 @@ const Login: React.FC = () => {
         <div className="h-screen w-full bg-black flex flex-col items-center align-center p-10 lg:text-lg">
           <div className="h-full w-full flex flex-col items-center justify-center">
             <img src="https://res.cloudinary.com/drgheojrx/image/upload/v1721377745/Logo_ja7u1j.png" alt="logo" className="w-150 h-30 bg-transparent"/>
-            <div className="bg-gray-800 rounded-md justify-start px-10 py-10 my-5 w-[100%] md:w-[80%] lg:w-[65%] xl:[50%] h-[550px]">
+            <div className="bg-gray-800 rounded-md justify-start px-10 py-10 my-5 w-[100%] md:w-[80%] lg:w-[35%] xl:[30%] h-[550px]">
                 <h1 className="text-gray-200 font-bold">Sign In</h1>
                 <p className="text-gray-500 py-2">Already have account? <span className="text-green-300"><Link to="/">Sign Up</Link></span></p>
                 <form className="h-[370px] flex flex-col overflow-y-scroll" onSubmit={handleSubmit}>

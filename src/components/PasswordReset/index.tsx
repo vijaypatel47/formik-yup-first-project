@@ -10,10 +10,10 @@ const PasswordReset: React.FC = () => {
       };
 
     return(
-      <div className="h-screen w-full bg-black flex flex-col items-center align-center p-10">
-        <div className="h-full w-full flex flex-col items-center justify-center">
-          <img src="https://res.cloudinary.com/drgheojrx/image/upload/v1721377745/Logo_ja7u1j.png" alt="logo" className="w-150 h-30 bg-transparent"/>
-          <div className="bg-gray-800 rounded-md justify-start pl-5 pr-10 py-10 my-5 w-[100%] md:w-[60%] lg:w-[33%] xl:[30%] h-[500px]">
+      <div className="h-screen w-full bg-black flex flex-col items-center align-center p-10 lg:text-lg">
+          <div className="h-full w-full flex flex-col items-center justify-center">
+            <img src="https://res.cloudinary.com/drgheojrx/image/upload/v1721377745/Logo_ja7u1j.png" alt="logo" className="w-150 h-30 bg-transparent"/>
+            <div className="bg-gray-800 rounded-md justify-start px-10 py-10 my-5 w-[100%] md:w-[80%] lg:w-[35%] xl:[30%] h-[550px]">
                 <h1 className="text-gray-200 font-bold text-lg">Password Reset</h1>
                 <p className="text-gray-500 py-2">Please enter your registerd email</p>
                 <form className="h-[340px] flex flex-col" onSubmit={handleSubmit}>
