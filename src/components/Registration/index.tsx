@@ -42,7 +42,7 @@ const Registration: React.FC = () => {
                     <div className="my-10 pr-10">
                         <div className='flex flex-row justify-between items-center'>
                         <input type={showPassword ? 'text' : 'password'} name="password" autoComplete='off' value={values.password} onChange={handleChange} onBlur={handleBlur} placeholder="Password" className="bg-transparent outline-none  text-gray-500" />
-                        <span className="eye-icon" onClick={toggleShowPassword}>
+                        <span className="ml-auto" onClick={toggleShowPassword}>
                             {touched.password ? <IoEye className='text-gray-500 h-7 w-7'/> : ''}
                         </span>
                         </div>
